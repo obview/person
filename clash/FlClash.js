@@ -353,7 +353,7 @@ const main = (config) => {
 
   const groupIcons = {
 
-    "漏网之鱼": "Proxy.png",
+    "Final": "Proxy.png",
 
     "国内直连": "China.png",
 
@@ -419,9 +419,9 @@ const main = (config) => {
 
   const managedGroups = {
 
-    "漏网之鱼": true,
+    "Final": true,
 
-    "默认": true,
+    "Proxy": true,
 
     "国内直连": true,
 
@@ -965,7 +965,7 @@ const main = (config) => {
 
   const defaultGroup = {
 
-    "name": "默认",
+    "name": "Proxy",
 
     "type": "select",
 
@@ -1009,12 +1009,12 @@ const main = (config) => {
 
   const mainSelector = {
 
-    "name": "漏网之鱼",
+    "name": "Final",
 
     "type": "select",
 
     "proxies":
-      ["默认"].concat(availableRegions, [
+      ["Proxy"].concat(availableRegions, [
         "国内直连"
       ])
 
@@ -1022,7 +1022,7 @@ const main = (config) => {
 
 
   const mainIcon =
-    getGroupIcon("漏网之鱼");
+    getGroupIcon("Final");
 
 
   if (mainIcon) {
@@ -1046,7 +1046,7 @@ const main = (config) => {
       "type": "select",
 
       "proxies":
-        ["默认"].concat(availableRegions, [
+        ["Proxy"].concat(availableRegions, [
           "国内直连"
         ])
 
@@ -1294,7 +1294,7 @@ const main = (config) => {
     // Final
     // --------------------------------------------------------------
 
-    "MATCH,漏网之鱼"
+    "MATCH,Final"
 
   ];
 
