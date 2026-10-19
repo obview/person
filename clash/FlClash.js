@@ -1276,7 +1276,7 @@ const main = (config) => {
 
     "GEOSITE,private,Direct",
 
-    "GEOIP,private,国内直连,no-resolve",
+    "GEOIP,private,Direct,no-resolve",
 
 
     // --------------------------------------------------------------
@@ -1285,7 +1285,7 @@ const main = (config) => {
 
     "GEOSITE,cn,Direct",
 
-    "GEOIP,cn,国内直连,no-resolve",
+    "GEOIP,cn,Direct,no-resolve",
 
 
     // --------------------------------------------------------------
