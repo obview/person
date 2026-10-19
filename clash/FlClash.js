@@ -900,7 +900,7 @@ const main = (config) => {
 
     "UK",
 
-    "Other
+    "OT"
 
   ];
 
