@@ -355,7 +355,7 @@ const main = (config) => {
 
     "Final": "Proxy.png",
 
-    "国内直连": "China.png",
+    "Direct": "China.png",
 
     "AI": "AI.png",
 
@@ -365,7 +365,7 @@ const main = (config) => {
 
     "GitHub": "GitHub.png",
 
-    "网络检测": "Network-test.png",
+    "Test": "Network-test.png",
 
     "Netflix": "Netflix.png",
 
@@ -423,7 +423,7 @@ const main = (config) => {
 
     "Proxy": true,
 
-    "国内直连": true,
+    "Direct": true,
 
     "AI": true,
 
@@ -433,7 +433,7 @@ const main = (config) => {
 
     "GitHub": true,
 
-    "网络检测": true,
+    "Test": true,
 
     "Netflix": true,
 
@@ -980,7 +980,7 @@ const main = (config) => {
 
   const domesticDirectGroup = {
 
-    "name": "国内直连",
+    "name": "Direct",
 
     "type": "select",
 
@@ -992,7 +992,7 @@ const main = (config) => {
 
 
   const domesticIcon =
-    getGroupIcon("国内直连");
+    getGroupIcon("Direct");
 
 
   if (domesticIcon) {
@@ -1015,7 +1015,7 @@ const main = (config) => {
 
     "proxies":
       ["Proxy"].concat(availableRegions, [
-        "国内直连"
+        "Direct"
       ])
 
   };
@@ -1047,7 +1047,7 @@ const main = (config) => {
 
       "proxies":
         ["Proxy"].concat(availableRegions, [
-          "国内直连"
+          "Direct"
         ])
 
     };
@@ -1091,7 +1091,7 @@ const main = (config) => {
 
     createBusinessGroup("Microsoft"),
 
-    createBusinessGroup("网络检测")
+    createBusinessGroup("Test")
 
   ];
 
@@ -1112,7 +1112,7 @@ const main = (config) => {
   // ================================================================
 
   const businessGroupsBeforeMicrosoft = businessGroups.filter((group) => {
-    return group.name !== "Microsoft" && group.name !== "网络检测";
+    return group.name !== "Microsoft" && group.name !== "Test";
   });
 
   const microsoftGroup = businessGroups.find((group) => {
@@ -1120,7 +1120,7 @@ const main = (config) => {
   });
 
   const networkTestGroup = businessGroups.find((group) => {
-    return group.name === "网络检测";
+    return group.name === "Test";
   });
 
   config["proxy-groups"] =
