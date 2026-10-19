@@ -781,6 +781,7 @@ const main = (config) => {
 
     "CA": [
 
+      /\bCA\b/i,
       /加拿大/i,
       /Canada/i,
       /Toronto/i,
