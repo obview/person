@@ -1190,7 +1190,7 @@ const main = (config) => {
     // Network Test
     // --------------------------------------------------------------
 
-    "RULE-SET,NetworkTest,网络检测",
+    "RULE-SET,NetworkTest,Test",
 
 
     // --------------------------------------------------------------
@@ -1274,7 +1274,7 @@ const main = (config) => {
     // Private
     // --------------------------------------------------------------
 
-    "GEOSITE,private,国内直连",
+    "GEOSITE,private,Direct",
 
     "GEOIP,private,国内直连,no-resolve",
 
@@ -1283,7 +1283,7 @@ const main = (config) => {
     // China
     // --------------------------------------------------------------
 
-    "GEOSITE,cn,国内直连",
+    "GEOSITE,cn,Direct",
 
     "GEOIP,cn,国内直连,no-resolve",
 
