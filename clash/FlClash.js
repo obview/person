@@ -397,7 +397,7 @@ const main = (config) => {
 
     "UK": "Other.png",
 
-    "Other": "Other.png"
+    "OT": "Other.png"
 
   };
 
@@ -465,7 +465,7 @@ const main = (config) => {
 
     "UK": true,
 
-    "Other": true
+    "OT": true
 
   };
 
@@ -833,7 +833,7 @@ const main = (config) => {
     }
 
 
-    return "Other";
+    return "OT";
 
   }
 
@@ -860,7 +860,7 @@ const main = (config) => {
 
     "UK": [],
 
-    "Other": []
+    "OT": []
 
   };
 
