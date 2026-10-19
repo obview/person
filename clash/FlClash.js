@@ -381,23 +381,23 @@ const main = (config) => {
 
     "Microsoft": "Microsoft.png",
 
-    "香港": "Hong_Kong.png",
+    "HK": "Hong_Kong.png",
 
-    "台湾": "Taiwan.png",
+    "TW": "Taiwan.png",
 
-    "日本": "Japan.png",
+    "JP": "Japan.png",
 
-    "新加坡": "Singapore.png",
+    "SG": "Singapore.png",
 
-    "韩国": "Korea.png",
+    "KR": "Korea.png",
 
-    "美国": "United_States.png",
+    "US": "United_States.png",
 
-    "加拿大": "Other.png",
+    "CA": "Other.png",
 
-    "英国": "Other.png",
+    "UK": "Other.png",
 
-    "其他地区": "Other.png"
+    "Other: "Other.png"
 
   };
 
@@ -449,23 +449,23 @@ const main = (config) => {
 
     "Microsoft": true,
 
-    "香港": true,
+    "HK": true,
 
-    "台湾": true,
+    "TW": true,
 
-    "日本": true,
+    "JP": true,
 
-    "新加坡": true,
+    "SG": true,
 
-    "韩国": true,
+    "KR": true,
 
-    "美国": true,
+    "US": true,
 
-    "加拿大": true,
+    "CA": true,
 
-    "英国": true,
+    "UK": true,
 
-    "其他地区": true
+    "Other: true
 
   };
 
@@ -695,7 +695,7 @@ const main = (config) => {
 
   const regionPatterns = {
 
-    "香港": [
+    "HK": [
 
       /香港/i,
       /\bHK\b/i,
@@ -706,7 +706,7 @@ const main = (config) => {
     ],
 
 
-    "台湾": [
+    "TW": [
 
       /台湾/i,
       /台灣/i,
@@ -720,7 +720,7 @@ const main = (config) => {
     ],
 
 
-    "日本": [
+    "JP": [
 
       /日本/i,
       /\bJP\b/i,
@@ -736,7 +736,7 @@ const main = (config) => {
     ],
 
 
-    "新加坡": [
+    "SG": [
 
       /新加坡/i,
       /\bSG\b/i,
@@ -747,7 +747,7 @@ const main = (config) => {
     ],
 
 
-    "韩国": [
+    "KR": [
 
       /韩国/i,
       /韓國/i,
@@ -761,7 +761,7 @@ const main = (config) => {
     ],
 
 
-    "美国": [
+    "US": [
 
       /美国/i,
       /\bUS\b/i,
@@ -779,7 +779,7 @@ const main = (config) => {
     ],
 
 
-    "加拿大": [
+    "CA": [
 
       /加拿大/i,
       /Canada/i,
@@ -790,7 +790,7 @@ const main = (config) => {
     ],
 
 
-    "英国": [
+    "UK": [
 
       /英国/i,
       /UK/i,
@@ -833,7 +833,7 @@ const main = (config) => {
     }
 
 
-    return "其他地区";
+    return "Other;
 
   }
 
@@ -844,23 +844,23 @@ const main = (config) => {
 
   const regionNodes = {
 
-    "香港": [],
+    "HK": [],
 
-    "台湾": [],
+    "TW": [],
 
-    "日本": [],
+    "JP": [],
 
-    "新加坡": [],
+    "SG": [],
 
-    "韩国": [],
+    "KR": [],
 
-    "美国": [],
+    "US": [],
 
-    "加拿大": [],
+    "CA": [],
 
-    "英国": [],
+    "UK": [],
 
-    "其他地区": []
+    "Other: []
 
   };
 
@@ -884,23 +884,23 @@ const main = (config) => {
 
   const regionOrder = [
 
-    "香港",
+    "HK",
 
-    "台湾",
+    "TW",
 
-    "日本",
+    "JP",
 
-    "新加坡",
+    "SG",
 
-    "韩国",
+    "KR",
 
-    "美国",
+    "US",
 
-    "加拿大",
+    "CA",
 
-    "英国",
+    "UK",
 
-    "其他地区"
+    "Other
 
   ];
 
@@ -1125,15 +1125,13 @@ const main = (config) => {
 
   config["proxy-groups"] =
 
-    [defaultGroup]
+    [defaultGroup, mainSelector]
 
       .concat(businessGroupsBeforeMicrosoft.filter((group) => {
         return group.name !== "Microsoft";
       }))
 
       .concat(microsoftGroup ? [microsoftGroup] : [])
-
-      .concat([mainSelector])
 
       .concat(networkTestGroup ? [networkTestGroup] : [])
 
