@@ -365,7 +365,7 @@ const main = (config) => {
 
     "GitHub": "GitHub.png",
 
-    "Test": "Network-test.png",
+    "Test": "Speedtest.png",
 
     "Netflix": "Netflix.png",
 
