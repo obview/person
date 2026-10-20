@@ -1,5 +1,6 @@
 name: Copy FlClash icons
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
