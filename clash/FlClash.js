@@ -353,7 +353,9 @@ const main = (config) => {
 
   const groupIcons = {
 
-    "Final": "Proxy.png",
+    "Final": "Other.png",
+
+    "Proxy": "Proxy.png",
 
     "Direct": "China.png",
 
@@ -973,6 +975,18 @@ const main = (config) => {
     "proxies": usableProxyNames.slice()
 
   };
+
+
+  const defaultIcon =
+    getGroupIcon("Proxy");
+
+
+  if (defaultIcon) {
+
+    defaultGroup["icon"] =
+      defaultIcon;
+
+  }
 
 
   // ================================================================
