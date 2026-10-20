@@ -397,7 +397,7 @@ const main = (config) => {
 
     "CA": "Other.png",
 
-    "UK": "Other.png",
+    "UK": "Network-test.png",
 
     "OT": "Other.png"
 
