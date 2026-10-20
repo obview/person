@@ -1,0 +1,52 @@
+name: Copy FlClash icons
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/copy-flclash-icons.yml"
+permissions:
+  contents: write
+jobs:
+  copy-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download icon assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p flclash/icons
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Other.png" -o "flclash/icons/Other.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Proxy.png" -o "flclash/icons/Proxy.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/China.png" -o "flclash/icons/China.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/AI.png" -o "flclash/icons/AI.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/YouTube.png" -o "flclash/icons/YouTube.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Google.png" -o "flclash/icons/Google.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/GitHub.png" -o "flclash/icons/GitHub.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Speedtest.png" -o "flclash/icons/Speedtest.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Netflix.png" -o "flclash/icons/Netflix.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Spotify.png" -o "flclash/icons/Spotify.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Steam.png" -o "flclash/icons/Steam.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Telegram.png" -o "flclash/icons/Telegram.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/TikTok.png" -o "flclash/icons/TikTok.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Apple.png" -o "flclash/icons/Apple.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Microsoft.png" -o "flclash/icons/Microsoft.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Hong_Kong.png" -o "flclash/icons/Hong_Kong.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Taiwan.png" -o "flclash/icons/Taiwan.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Japan.png" -o "flclash/icons/Japan.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Singapore.png" -o "flclash/icons/Singapore.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Korea.png" -o "flclash/icons/Korea.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/United_States.png" -o "flclash/icons/United_States.png"
+          curl -fL --retry 3 "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/icons/Network-test.png" -o "flclash/icons/Network-test.png"
+      - name: Commit icons and remove temporary workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/copy-flclash-icons.yml
+          git add flclash/icons
+          git commit -m "Add local copies of FlClash icons"
+          git push
