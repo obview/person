@@ -1,0 +1,93 @@
+{
+  "name": "FlClash Perfect-Rules 图标集",
+  "icons": [
+    {
+      "name": "Proxy",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Proxy.png"
+    },
+    {
+      "name": "Direct",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/China.png"
+    },
+    {
+      "name": "AI",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/AI.png"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/YouTube.png"
+    },
+    {
+      "name": "Google",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Google.png"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/GitHub.png"
+    },
+    {
+      "name": "Test",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Speedtest.png"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Netflix.png"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Spotify.png"
+    },
+    {
+      "name": "Steam",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Steam.png"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Telegram.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/TikTok.png"
+    },
+    {
+      "name": "Apple",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Apple.png"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Microsoft.png"
+    },
+    {
+      "name": "HK",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Hong_Kong.png"
+    },
+    {
+      "name": "TW",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Taiwan.png"
+    },
+    {
+      "name": "JP",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Japan.png"
+    },
+    {
+      "name": "SG",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Singapore.png"
+    },
+    {
+      "name": "KR",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Korea.png"
+    },
+    {
+      "name": "US",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/United_States.png"
+    },
+    {
+      "name": "UK",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/United_Kingdom.png"
+    },
+    {
+      "name": "Final",
+      "url": "https://raw.githubusercontent.com/obview/person/main/clash/icons/Final.png"
+    }
+  ]
+}
