@@ -1,0 +1,30 @@
+# JMComic / 禁漫天堂 专用规则集
+# 来源：Hawaiine/mihomo-rules 的 Porn.yaml 中筛选出的 JMComic 相关域名
+payload:
+  - DOMAIN-SUFFIX,18comic-god.cc
+  - DOMAIN-SUFFIX,18comic-god.club
+  - DOMAIN-SUFFIX,18comic-god.xyz
+  - DOMAIN-SUFFIX,18comic.cc
+  - DOMAIN-SUFFIX,18comic.company
+  - DOMAIN-SUFFIX,18comic.org
+  - DOMAIN-SUFFIX,18comic.vip
+  - DOMAIN-SUFFIX,jmapiproxy1.cc
+  - DOMAIN-SUFFIX,jmapiproxy1.monster
+  - DOMAIN-SUFFIX,jmapiproxy2.cc
+  - DOMAIN-SUFFIX,jmapiproxy3.cc
+  - DOMAIN-SUFFIX,jmapiproxy4.cc
+  - DOMAIN-SUFFIX,jmapiproxyxxx.vip
+  - DOMAIN-SUFFIX,jmcomic-fb.vip
+  - DOMAIN-SUFFIX,jmcomic-zzz.one
+  - DOMAIN-SUFFIX,jmcomic-zzz.org
+  - DOMAIN-SUFFIX,jmcomic.group
+  - DOMAIN-SUFFIX,jmcomic.ltd
+  - DOMAIN-SUFFIX,jmcomic.me
+  - DOMAIN-SUFFIX,jmcomic.mobi
+  - DOMAIN-SUFFIX,jmcomic.moe
+  - DOMAIN-SUFFIX,jmcomic.rocks
+  - DOMAIN-SUFFIX,jmcomic1.city
+  - DOMAIN-SUFFIX,jmcomic1.me
+  - DOMAIN-SUFFIX,jmcomic1.mobi
+  - DOMAIN-SUFFIX,jmcomic1.rocks
+  - DOMAIN-SUFFIX,jmcomic2.moe
